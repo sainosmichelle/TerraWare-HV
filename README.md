@@ -11,6 +11,7 @@
 <p>The code is developed and tested on Windows and Ubuntu using [Python 3.7.x](https://www.python.org/downloads/release/python-378/).</p>
 <h3>Prerequisites</h3>
 <p>In addition to Python and setting it as a Path variable, you need to install the following packages using __pip__.</p>
+
 ```
 pip install numpy==1.19.0
 pip install matplotlib==3.2.2
