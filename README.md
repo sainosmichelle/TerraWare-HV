@@ -1,5 +1,5 @@
 # TerraWare HV
-![alt text][logo]
+![logo]
 
 [logo]: https://github.com/sainosmichelle/TerraWare-HV/tree/master/Logos/LogoE.png "TerrawareLogo"
 
