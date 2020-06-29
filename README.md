@@ -1,7 +1,7 @@
 <img src="https://github.com/sainosmichelle/TerraWare-HV/blob/master/Logos/LogoE.png"
   align="left"
-  width="50"
-  height="70"
+  width="75"
+  height="80"
   alt="TerraWare HV">
 
 <h1> TerraWare HV </h1>
