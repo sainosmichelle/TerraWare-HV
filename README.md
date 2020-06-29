@@ -1,6 +1,6 @@
 <h1> <img src="https://github.com/sainosmichelle/TerraWare-HV/tree/master/Logos/LogoE.png"
-  width="128"
-  height="128"
+  width="80"
+  height="80"
   style="float:left;">
 #TerraWare HV
 
