@@ -6,7 +6,9 @@
 
 <h1> TerraWare HV </h1>
 <br/>
-<p>Software developed by in Python 3.7.x to compute the spectral ratio (H/V) using seismic noise data and also to compute the inversion of the H/V using the Diffuse Field Assumption.</p>
+<p> Software desarrollado en Python 3.7.x para calcular  el cociente espectral (H/V) usando datos de ruido sísmico ambiental y calcular la inversión de dico cociente usando la suposición de la existencia de Campos Difusos.
+
+ La inversión del H/V se calcula mediante el método meta-heurístico de Optimización de Enjambre de Partículas (PSO).</p>
 <h2>Getting Started</h2>
 <p>Instructions to run</p>
 <h3>Prerequisites</h3>
