@@ -24,8 +24,8 @@ pip install pyside2==5.15.0
 <p>Once the main window is opened, load the file VA30.SAF with "Load V.A. file" option. Then change the parameters and process it.</p>
 <img src="https://github.com/sainosmichelle/TerraWare-HV/blob/master/Logos/Captura2.png"
   align="left"
-  width="1000"
-  height="700">
+  width="800"
+  height="500">
 <h2>Contributing</h2>
 <p>Contribuciones</p>
 <h2>Versioning</h2>
