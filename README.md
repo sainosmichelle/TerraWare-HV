@@ -7,7 +7,7 @@
 <h1> TerraWare HV </h1>
 <br/>
 <p>Software developed by <a href="https://www.geotem.com.mx" title="Title">
-Geotem Ingeniería</a> in Python 3.7.x to compute the spectral ratio (H/V) using seismic noise data and also to compute the inversion of the H/V using the Diffuse Field Assumption. The inversion uses the Particle Swarm Optimization Algorithm and an Occam inversion.</p>
+Geotem Ingeniería</a> in Python 3.7.x to compute the spectral ratio (H/V) using seismic noise data and also to compute the inversion of the H/V using the Diffuse Field Assumption. The inversion uses the Particle Swarm Optimization Algorithm (PSO) and an Occam gradient to smooth velocity variations between layers.</p>
 <h2>Getting Started</h2>
 The code is developed and tested on Windows and Ubuntu using
 <a href="https://www.python.org/downloads/release/python-375" title="Title">
@@ -32,7 +32,56 @@ pip install pyside2==5.15.0
   height="500">
 <br/>
 <p>The processing parameters are described in the next table:</p>
-<p>To invert the results of the spectral ratio, click on the <em>"Inversion"</em> tab. You also need to modify the parameters on the <em>"Cargar Modelo Inicial"</em> and <em>"Parámetros de Inversión"</em> dialog boxes.</p>
+
+| Processing Parameters        | Description          |
+| ------------- |:-------------:|
+|<b>Normalización</b> | Type of normalization in frequencies |
+|<b>Window</b> | Type of tappered window |
+|<b>Traslape</b>| Overlap percentage|
+|<b>Factor de Taper</b>| Taper factor if the window is Tukey type|
+|<b>OneBit</b> | Applies a OneBit normalization in time |
+|<b>Quitar tendencia</b> | Remove mean trend of the signal |
+|<b>Muestreo tiempo</b> | Time sampling rate. Takes the signal default sampling rate|
+|<b>Muestreo frecuencia</b> | Frecuency sampling rate for the spectral ratio. |
+|<b>Segundos de ventana</b> | Window length in seconds|
+|<b>Konno-Ohmachi</b> | Konno-Ohmachi filter factor that goes from 0 to 90, being 90 the raw ratio and 0 the most smoothed ratio.|
+|<b>Frecuencias para H/V</b>| Range of frequencies to visualize the spectral ratio|
+|<b>Filtro de Butterworth</b>| Cut-off frequencies to apply a Butterworth filter if needed|
+|<b>H/V direccionales</b> | Spectral ratio of the N-S and E-W components|
+|<b>Espectros</b>| Amplitude spectrum of the raw signal|
+
+<p>To invert the results of the spectral ratio, click on the <em>"Inversion"</em> tab. You also need to modify the parameters on the <em>"Cargar Modelo Inicial"</em> and <em>"Parámetros de Inversión"</em> dialog boxes. Make sure to select the Particle Swarm Optimization as the inversion method. Normally, the default PSO parameters work fine for near surface results.</p>
+
+| PSO Parameters        | Description          |
+| ------------- |:-------------:|
+|<b>Iteraciones</b> | Number of iterations of the Swarm (external loop)|
+|<b>Partículas</b> | Number of elements of the Swarm (internal loop)|
+|<b>Factor de inercia inicial</b> | Initial value of the inertia factor, normally ranges between 1 to 2. |
+|<b>Amortiguamiento</b> | Damping factor for the inertial term. Normally ranges between 0.5 (higher perturbation of the parameter space) to 0.9999+ (lower perturbation of the parameter space).|
+|<b>Coeficiente cognitivo</b> | Cognitive factor, controls the term that depends on the particle trajectory. Ranges between 1-2.|
+|<b>Coeficiente social</b> | Social factor, controls the term that depends on the swarm best result. Ranges between 1-2. |
+|<b>Factor de Velocidad</b> | Perturbation of the parameter space step factor|
+|<b>Gradiente de VP</b> | Poisson ratio gradient factor, the smaller the quantity the less smoothed the resulting Poisson ratio you'll get. |
+|<b>Gradiente de VS</b> | Shear velocity gradient factor, the smaller the quantity the less smoothed the resulting VS profile.|
+|<b>Gradiente de Densidad</b> | Density gradient factor, the smaller the quantity the less smoothed the resulting density profile.|
+
+<p>The initial model parameters depend on the results you are expecting:</p>
+
+| PSO Parameters        | Description          |
+| ------------- |:-------------:|
+|<b>Espesor de la primera capa</b> | Since the thickness of the resulting layers are computed
+logarithmically we need to provide the first layer thickness in meters|
+|<b>Número de capas</b> | Number of expected layers. Suggested ranges are between 8 to 36. Remember that the more layers the algorithm takes more time to compute the results|
+|<b>Profundidad</b> | Expected depth of the results|
+|<b>Coef. de Poisson mínimo</b> | Minimum value of the Poisson ratio. (Poisson ratio normally ranges between 0.15 to 0.4999+ for geosciences)|
+|<b>Coef. de Poisson máximo</b> | Maximun value of the Poisson ratio. (Poisson ratio normally ranges between 0.15 to 0.4999+ for geosciences)|
+|<b>VS mínima</b> | Minimum value of the Shear velocity expected. (Shear velocity normally ranges between 100 to 3000 [m/s] for near surface applications)|
+|<b>VS máxima</b> | Maximum value of the Shear velocity expected. (Shear velocity normally ranges between 100 to 3000 [m/s] for near surface applications)|
+|<b>Densidad mínima</b> | Minimum value of the density expected. (Shear velocity normally ranges between 1000 to 3000 [kg/m3] for near surface applications)|
+|<b>Densidad máxima</b> | Minimum value of the density expected. (Shear velocity normally ranges between 1000 to 3000 [kg/m3] for near surface applications|
+|<b>Basamento</b> | If selected, forces the last layer to have the maximum value.|
+
+
 <img src="https://github.com/sainosmichelle/TerraWare-HV/blob/master/Logos/Captura3.png"
   width="800"
   height="500">
