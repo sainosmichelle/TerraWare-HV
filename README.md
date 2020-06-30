@@ -10,7 +10,7 @@
 <h2>Getting Started</h2>
 <p>The code is developed and tested on Windows and Ubuntu using [Python 3.7](https://www.python.org/downloads/release/python-378) .</p>
 <h3>Prerequisites</h3>
-<p>In addition to Python and setting it as a Path variable, you need to install the following packages using **pip**.</p>
+<p>In addition to Python and setting it as a Path variable, you need to install the following packages using pip.</p>
 ```
 pip install numpy==1.19.0
 pip install matplotlib==3.2.2
@@ -19,13 +19,14 @@ pip install pandas==1.0.5
 pip install pyside2==5.15.0
 ```
 <h3>Installation</h3>
-<p>Download or clone this repository, then open **main.py** file with the python enviroment.</p>
+<p>Download or clone this repository, then open main.py file with the python enviroment.</p>
 <h2>Running the tests</h2>
 <p>Once the main window is opened, load the files in the folder "Ejemplos" with "Load V.A. file" option. Then change the parameters and process it.</p>
 <img src="https://github.com/sainosmichelle/TerraWare-HV/blob/master/Logos/Captura2.png"
   align="left"
   width="800"
   height="500">
+<br/>
 <h2>Contributing</h2>
 <p>Contribuciones</p>
 <h2>Versioning</h2>
