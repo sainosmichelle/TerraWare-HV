@@ -15,7 +15,7 @@ Sánchez-Sesma, et al. 2011.</a></p>
 The code is developed and tested on Windows and Ubuntu using
 <a href="https://www.python.org/downloads/release/python-375" title="Title">
 Python 3.7.x</a>. You have two options of installation, through the creation of an Anaconda enviroment or using the pip method.
-<h4>Anaconda enviroment</h4>
+<h4>Anaconda enviroment installation</h4>
 <p>First we need to create an enviroment in the Anaconda prompt with the following specifications:</p>
 
 ```
@@ -28,7 +28,7 @@ conda create -n terrawarehv python=3.7 numpy matplotlib=3.2.2 scipy=1.5.0 pandas
 conda activate terrawarehv
 ```
 
-<h4>Pip Installation</h4>
+<h4>Pip installation</h4>
 <p>In addition to Python and setting it as a Path variable, you need to install the following packages using pip.</p>
 
 ```
