@@ -6,8 +6,9 @@
 
 <h1> TerraWare HV </h1>
 <br/>
-<p>Software developed by <a href="https://www.geotem.com.mx" title="Title">
-Geotem Ingeniería</a> in Python 3.7.x to compute the spectral ratio (H/V) using seismic noise data and also to compute the inversion of the H/V using the Diffuse Field Assumption. The inversion uses the Particle Swarm Optimization Algorithm (PSO) and an Occam gradient to smooth velocity variations between layers.</p>
+<p>Software developed by <a href="http://www.geotem.com.mx" title="Title">
+Geotem Ingeniería</a> in Python 3.7.x to compute the spectral ratio (H/V) using seismic noise data and also to compute the inversion of the H/V using the Diffuse Field Assumption. The inversion uses the Particle Swarm Optimization Algorithm (PSO) and an Occam gradient to smooth velocity variations between layers. The results the software provide are the shear and compressional velocity profiles estimated.</p>
+<p>The processing of ambient noise vibrations is made with the stacking and the mean of the selected windows considering the diffuse field assumption.</p>
 <h2>Getting Started</h2>
 The code is developed and tested on Windows and Ubuntu using
 <a href="https://www.python.org/downloads/release/python-375" title="Title">
@@ -66,6 +67,10 @@ pip install pyside2==5.15.0
 |<b>Gradiente de Densidad</b> | Density gradient factor, the smaller the quantity the less smoothed the resulting density profile.|
 
 <p>The initial model parameters depend on the results you are expecting:</p>
+<img src="https://github.com/sainosmichelle/TerraWare-HV/blob/master/Logos/Captura3.png"
+  width="800"
+  height="500">
+<br/>
 
 | Initial Model Parameters        | Description          |
 | ------------- |:-------------:|
@@ -73,24 +78,20 @@ pip install pyside2==5.15.0
 |<b>Número de capas</b> | Number of expected layers. Suggested ranges are between 8 to 36. Remember that the more layers the algorithm takes more time to compute the results|
 |<b>Profundidad</b> | Expected depth of the results|
 |<b>Coef. de Poisson mínimo</b> | Minimum value of the Poisson ratio. (Poisson ratio normally ranges between 0.15 to 0.4999+ for geosciences)|
-|<b>Coef. de Poisson máximo</b> | Maximun value of the Poisson ratio. (Poisson ratio normally ranges between 0.15 to 0.4999+ for geosciences)|
+|<b>Coef. de Poisson máximo</b> | Maximum value of the Poisson ratio. (Poisson ratio normally ranges between 0.15 to 0.4999+ for geosciences)|
 |<b>VS mínima</b> | Minimum value of the Shear velocity expected. (Shear velocity normally ranges between 100 to 3000 [m/s] for near surface applications)|
 |<b>VS máxima</b> | Maximum value of the Shear velocity expected. (Shear velocity normally ranges between 100 to 3000 [m/s] for near surface applications)|
 |<b>Densidad mínima</b> | Minimum value of the density expected. (Shear velocity normally ranges between 1000 to 3000 [kg/m3] for near surface applications)|
 |<b>Densidad máxima</b> | Minimum value of the density expected. (Shear velocity normally ranges between 1000 to 3000 [kg/m3] for near surface applications|
 |<b>Basamento</b> | If selected, forces the last layer to have the maximum value.|
 
-
-<img src="https://github.com/sainosmichelle/TerraWare-HV/blob/master/Logos/Captura3.png"
-  width="800"
-  height="500">
-<br/>
 <p>Modify the parameters until you get the results you expect.</p>
 <h2>Contributing</h2>
 <p>Please read CONTRIBUTING.md for details on our code of conduct, and the process for submitting pull requests to us.</p>
 <h2>Authors</h2>
 <ul>
 <li> <b>Michelle Sainos Vizuett</b> <em>- Developer</it></em> </li>
+<li> <b>Juan Carlos Colchado Casas</b> <em>- Developer</it></em> </li>
 <li> <b>Alfredo Sánchez Galindo</b> <em>- Chief Software Engineer </it></em> </li>
 <li> <b>Francisco José Sánchez Sesma</b> <em>- External Consultant </it></em> </li>
 </ul>
