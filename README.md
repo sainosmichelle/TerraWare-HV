@@ -67,10 +67,9 @@ pip install pyside2==5.15.0
 
 <p>The initial model parameters depend on the results you are expecting:</p>
 
-| PSO Parameters        | Description          |
+| Initial Model Parameters        | Description          |
 | ------------- |:-------------:|
-|<b>Espesor de la primera capa</b> | Since the thickness of the resulting layers are computed
-logarithmically we need to provide the first layer thickness in meters|
+|<b>Espesor de la primera capa</b> | Since the thickness of the resulting layers are computed logarithmically we need to provide the first layer thickness in meters|
 |<b>Número de capas</b> | Number of expected layers. Suggested ranges are between 8 to 36. Remember that the more layers the algorithm takes more time to compute the results|
 |<b>Profundidad</b> | Expected depth of the results|
 |<b>Coef. de Poisson mínimo</b> | Minimum value of the Poisson ratio. (Poisson ratio normally ranges between 0.15 to 0.4999+ for geosciences)|
