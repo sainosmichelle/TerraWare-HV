@@ -14,8 +14,21 @@ Sánchez-Sesma, et al. 2011.</a></p>
 <h2>Getting Started</h2>
 The code is developed and tested on Windows and Ubuntu using
 <a href="https://www.python.org/downloads/release/python-375" title="Title">
-Python 3.7.x</a>.
-<h3>Prerequisites</h3>
+Python 3.7.x</a>. You have two options of installation, through the creation of an Anaconda enviroment or using the pip method.
+<h4>Anaconda enviroment</h4>
+<p>First we need to create an enviroment in the Anaconda prompt with the following specifications:</p>
+
+```
+conda create -n terrawarehv python=3.7 numpy matplotlib=3.2.2 scipy=1.5.0 pandas=1.0.5 pyside2
+```
+
+<p>Then we need to activate the enviroment</p>
+
+```
+conda activate terrawarehv
+```
+
+<h4>Pip Installation</h4>
 <p>In addition to Python and setting it as a Path variable, you need to install the following packages using pip.</p>
 
 ```
@@ -27,7 +40,11 @@ pip install pyside2==5.15.0
 ```
 
 <h3>Installation</h3>
-<p>Download or clone this repository, then open main.py file with the python enviroment.</p>
+<p>Download or clone this repository, then open main.py file. For the anaconda option we need to activate the "terrawarehv" enviroment and run the file in it.</p>
+
+```
+python main.py
+```
 <h2>Running the tests</h2>
 <p>Once the main window is opened, load the files in the folder <em>"Ejemplos"</em> with <em>"Load V.A. file"</em> option and double click a sounding to work on it. Then change the parameters and process it.</p>
 <img src="https://github.com/sainosmichelle/TerraWare-HV/blob/master/Logos/Captura2.png"
