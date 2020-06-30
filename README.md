@@ -22,10 +22,11 @@ pip install pyside2==5.15.0
 <p>Download or clone this repository, then open main.py file with the python enviroment.</p>
 <h2>Running the tests</h2>
 <p>Once the main window is opened, load the files in the folder "Ejemplos" with "Load V.A. file" option. Then change the parameters and process it.</p>
+<br/>
 <img src="https://github.com/sainosmichelle/TerraWare-HV/blob/master/Logos/Captura2.png"
-  align="left"
   width="800"
   height="500">
+<br/>
 <br/>
 <h2>Contributing</h2>
 <p>Contribuciones</p>
