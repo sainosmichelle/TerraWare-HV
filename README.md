@@ -111,6 +111,7 @@ python main.py
 <ul>
 <li> <b>Michelle Sainos Vizuett</b> <em>- Developer</it></em> </li>
 <li> <b>Juan Carlos Colchado Casas</b> <em>- Developer</it></em> </li>
+<li> <b>Francisco Huante Arana</b> <em>- Consultant</it></em> </li>
 <li> <b>Alfredo Sánchez Galindo</b> <em>- Chief Software Manager </it></em> </li>
 <li> <b>Francisco José Sánchez Sesma</b> <em>- External Consultant </it></em> </li>
 </ul>
