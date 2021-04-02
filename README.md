@@ -7,7 +7,7 @@
 <h1> TerraWare HV </h1>
 <br/>
 <p>Software developed by <a href="http://www.geotem.com.mx" title="Title">
-Geotem Ingeniería</a> in Python 3.7.x to compute the spectral ratio (H/V) using seismic noise data and also to compute the inversion of the H/V using the Diffuse Field Assumption. # The inversion uses the Particle Swarm Optimization Algorithm (PSO) and an Occam gradient to smooth velocity variations between layers. The results the software provide are the shear and compressional velocity profiles estimated.</p>
+Geotem Ingeniería</a> in Python 3.7.x to compute the spectral ratio (H/V) using seismic noise data and also to compute the inversion of the H/V using the Diffuse Field Assumption. <!--The inversion uses the Particle Swarm Optimization Algorithm (PSO) and an Occam gradient to smooth velocity variations between layers. The results the software provide are the shear and compressional velocity profiles estimated.--></p>
 <p>The processing of ambient noise vibrations is made with the stacking and the mean of the selected windows considering the diffuse field assumption.</p>
 <p>The inversion of the H/V runs an external C++ executable file. The modeler of the H/V phenomena used in the inversion algorithm is the one described in <a href="https://academic.oup.com/gji/article/186/1/221/2102268" title="Title">
 Sánchez-Sesma, et al. 2011.</a></p>
@@ -70,9 +70,9 @@ python main.py
 |<b>H/V direccionales</b> | Spectral ratio of the N-S and E-W components|
 |<b>Espectros</b>| Amplitude spectrum of the raw signal|
 
-<p>To invert the results of the spectral ratio, click on the <em>"Inversion"</em> tab. You also need to modify the parameters on the <em>"Cargar Modelo Inicial"</em> and <em>"Parámetros de Inversión"</em> dialog boxes. Make sure to select the Particle Swarm Optimization as the inversion method. Normally, the default PSO parameters work fine for near surface results.</p>
+<!--<p>To invert the results of the spectral ratio, click on the <em>"Inversion"</em> tab. You also need to modify the parameters on the <em>"Cargar Modelo Inicial"</em> and <em>"Parámetros de Inversión"</em> dialog boxes. Make sure to select the Particle Swarm Optimization as the inversion method. Normally, the default PSO parameters work fine for near surface results.</p> -->
 
-| PSO Parameters        | Description          |
+<!--| PSO Parameters        | Description          |
 | ------------- |:-------------:|
 |<b>Iteraciones</b> | Number of iterations of the Swarm (external loop)|
 |<b>Partículas</b> | Number of elements of the Swarm (internal loop)|
@@ -83,7 +83,7 @@ python main.py
 |<b>Factor de Velocidad</b> | Perturbation of the parameter space step factor|
 |<b>Gradiente de VP</b> | Poisson ratio gradient factor, the smaller the quantity the less smoothed the resulting Poisson ratio you'll get. |
 |<b>Gradiente de VS</b> | Shear velocity gradient factor, the smaller the quantity the less smoothed the resulting VS profile.|
-|<b>Gradiente de Densidad</b> | Density gradient factor, the smaller the quantity the less smoothed the resulting density profile.|
+|<b>Gradiente de Densidad</b> | Density gradient factor, the smaller the quantity the less smoothed the resulting density profile.| -->
 
 <p>The initial model parameters depend on the results you are expecting:</p>
 <img src="https://github.com/sainosmichelle/TerraWare-HV/blob/master/Logos/Captura3.png"
@@ -91,7 +91,7 @@ python main.py
   height="500">
 
 
-| Initial Model Parameters        | Description          |
+<!--| Initial Model Parameters        | Description          |
 | ------------- |:-------------:|
 |<b>Espesor de la primera capa</b> | Since the thickness of the resulting layers are computed logarithmically we need to provide the first layer thickness in meters|
 |<b>Número de capas</b> | Number of expected layers. Suggested ranges are between 8 to 36. Remember that the more layers the algorithm takes more time to compute the results|
@@ -102,7 +102,7 @@ python main.py
 |<b>VS máxima</b> | Maximum value of the Shear velocity expected. (Shear velocity normally ranges between 100 to 3000 [m/s] for near surface applications)|
 |<b>Densidad mínima</b> | Minimum value of the density expected. (Shear velocity normally ranges between 1000 to 3000 [kg/m3] for near surface applications)|
 |<b>Densidad máxima</b> | Minimum value of the density expected. (Shear velocity normally ranges between 1000 to 3000 [kg/m3] for near surface applications|
-|<b>Basamento</b> | If selected, forces the last layer to have the maximum value.|
+|<b>Basamento</b> | If selected, forces the last layer to have the maximum value.| -->
 
 <p>Modify the parameters until you get the results you expect.</p>
 <h2>Contributing</h2>
