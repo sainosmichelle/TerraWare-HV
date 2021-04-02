@@ -7,7 +7,7 @@
 <h1> TerraWare HV </h1>
 <br/>
 <p>Software developed by <a href="http://www.geotem.com.mx" title="Title">
-Geotem Ingeniería</a> in Python 3.7.x to compute the spectral ratio (H/V) using seismic noise data and also to compute the inversion of the H/V using the Diffuse Field Assumption. The inversion uses the Particle Swarm Optimization Algorithm (PSO) and an Occam gradient to smooth velocity variations between layers. The results the software provide are the shear and compressional velocity profiles estimated.</p>
+Geotem Ingeniería</a> in Python 3.7.x to compute the spectral ratio (H/V) using seismic noise data and also to compute the inversion of the H/V using the Diffuse Field Assumption. <>The inversion uses the Particle Swarm Optimization Algorithm (PSO) and an Occam gradient to smooth velocity variations between layers. The results the software provide are the shear and compressional velocity profiles estimated.</p>
 <p>The processing of ambient noise vibrations is made with the stacking and the mean of the selected windows considering the diffuse field assumption.</p>
 <p>The inversion of the H/V runs an external C++ executable file. The modeler of the H/V phenomena used in the inversion algorithm is the one described in <a href="https://academic.oup.com/gji/article/186/1/221/2102268" title="Title">
 Sánchez-Sesma, et al. 2011.</a></p>
